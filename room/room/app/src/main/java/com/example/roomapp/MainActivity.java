@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             .allowMainThreadQueries()
             .build();
 
-        tvMostrar = findViewById(R.id.tvMostrar);
+        tvMostrar = findViewById(R.id.TextView);
         List<Pelicula> peliculas = new ArrayListPeliculas();
         peliculas = db.peliculaDAO().peliculasTodas();
         tvMostrar.setText(" ");
