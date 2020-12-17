@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             .build();
 
         tvMostrar = findViewById(R.id.tvMostrar);
-        List<Pelicula> peliculas = new ArrayListPeliculas[];
+        List<Pelicula> peliculas = new ArrayListPeliculas();
         peliculas = db.peliculaDAO().peliculasTodas();
         tvMostrar.setText(" ");
         for (Pelicula item : peliculas){
